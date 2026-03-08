@@ -1178,7 +1178,9 @@
       .navbar-nav .nav-link:active {
         color: #ff0000;
       }
-      .navbar-collapse > ul > li .dropdown-menu:before {
+      
+      @media (min-width: 992px) {
+        .navbar-collapse > ul > li .dropdown-menu:before {
         content: "";
         position: absolute;
         border-bottom: 10px solid #ff0000;
@@ -1186,6 +1188,7 @@
         border-right: 10px solid transparent;
         bottom: 100%;
         left: 40%;
+      }
       }
       .navbar-toggler:focus {
         outline: none;
@@ -2162,7 +2165,7 @@
                 href="#"
                 id="navbarDropdown1"
                 role="button"
-                data-bs-toggle="dropdown"
+                data-bs-toggle="dropdown" 
                 aria-expanded="false"
               >
                 About Us
@@ -2634,7 +2637,7 @@
     <!-- contact form js -->
     <script src="https://www.techitcloud.in/assets/js/contact.form.js"></script>
     <!-- main js -->
-    <script src="https://www.techitcloud.in/assets/js/main.js"></script>
+    <!-- <script src="https://www.techitcloud.in/assets/js/main.js"></script> -->
     <!-- Footer End -->
 
     <script>
@@ -2675,14 +2678,6 @@
     </script>
 
     <script>
-      document.querySelectorAll(".dropdown-menu").forEach(function (menu) {
-        menu.addEventListener("click", function (e) {
-          e.stopPropagation();
-        });
-      });
-    </script>
-
-    <script>
       const navbar = document.querySelector(".Navbar_new-header-navbar__s19gh");
 
       window.addEventListener("scroll", () => {
@@ -2692,4 +2687,3 @@
     </script>
   </body>
 </html>
-
