@@ -1121,11 +1121,11 @@
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         color: black;
         top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    border-radius: 0 !important;
-    max-width: none;
-    width: 100% !important;
+        left: 0 !important;
+        right: 0 !important;
+        border-radius: 0 !important;
+        max-width: none;
+        width: 100% !important;
       }
       .Navbar_new-header-navbar__s19gh.Navbar_solid__VGWoZ
         .navbar-nav
@@ -2145,7 +2145,7 @@
           decoding="async"
           data-nimg="1"
           class="Navbar_new-header-logo-image__f8f9Z"
-          src="./tech logo cut trans.png"
+          src="./logo_dark.png"
           style="color: transparent"
         />
         <button
@@ -2280,11 +2280,35 @@
     <!-- Main content Start -->
     <div class="main-content">
       <style>
+        .rs-services.services-style6 .services-item {
+          border-radius: 20px;
+        }
+        .rs-services.services-style6 .services-item .services-img img {
+          border-radius: 20px 20px 0 0;
+          height: 300px !important;
+        }
         .rs-services.services-style6 .services-item .services-content {
           padding: 15px 15px 15px;
           background: #fff;
           margin: 0;
           text-align: center;
+          border-radius: 0 0 20px 20px;
+        }
+        .rs-services.services-style6
+          .services-item
+          .services-content
+          .services-btn
+          a {
+          border-radius: 10px;
+        }
+        .rs-services.services-style6
+          .services-item
+          .services-content
+          .services-txt {
+          margin-bottom: 1rem;
+        }
+        .rs-services.services-style6 .services-item .services-content .title {
+          margin: 0;
         }
       </style>
       <!-- services -->
@@ -2466,154 +2490,177 @@
         </div>
       </div>
 
-      <div class="container-fluid my-5" style="padding-left: 15px; padding-right: 15px;">
-  <div class="row g-3">
+      <!-- <div
+        class="container-fluid my-5"
+        style="padding-left: 15px; padding-right: 15px"
+      >
+        <div class="row g-3">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="service-card">
+              <img
+                src="./cloud-computing.jpeg"
+                class="card-img"
+                alt="Cloud Computing"
+              />
 
-    <!-- Card 1 -->
-    <div class="col-12 col-md-6 col-lg-3">
-      <div class="service-card">
-        <img src="./cloud-computing.jpeg" class="card-img" alt="Cloud Computing">
+              <div class="card-content">
+                <h3>End Point Security</h3>
+                <p>
+                  Simple, comprehensive endpoint security for workstations,
+                  laptops and servers.
+                </p>
 
-        <div class="card-content">
-          <h3>End Point Security</h3>
-          <p>Simple, comprehensive endpoint security for workstations, laptops and servers.</p>
+                <div class="learn">
+                  Know more
+                  <span class="arrow">→</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="service-card">
+              <img
+                src="./cloud-computing.jpeg"
+                class="card-img"
+                alt="Cloud Computing"
+              />
 
-          <div class="learn">
-            Know more
-            <span class="arrow">→</span>
+              <div class="card-content">
+                <h3>End Point Security Cloud</h3>
+                <p>
+                  Simple, comprehensive endpoint security for workstations,
+                  laptops and servers.
+                </p>
+
+                <div class="learn">
+                  Know more
+                  <span class="arrow">→</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="service-card">
+              <img
+                src="./cloud-computing.jpeg"
+                class="card-img"
+                alt="Cloud Computing"
+              />
+
+              <div class="card-content">
+                <h3>Cloud Computing Services</h3>
+                <p>
+                  In the present advanced scene in Cloud Computing Services,
+                  distributed computing.
+                </p>
+
+                <div class="learn">
+                  Know more
+                  <span class="arrow">→</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="service-card">
+              <img
+                src="./cloud-computing.jpeg"
+                class="card-img"
+                alt="Cloud Computing"
+              />
+
+              <div class="card-content">
+                <h3>Firewall</h3>
+                <p>
+                  Simple, comprehensive endpoint security for workstations,
+                  laptops and servers.
+                </p>
+
+                <div class="learn">
+                  Know more
+                  <span class="arrow">→</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+      </div> -->
 
-    <!-- Card 2 -->
-    <div class="col-12 col-md-6 col-lg-3">
-      <div class="service-card">
-        <img src="./cloud-computing.jpeg" class="card-img" alt="Cloud Computing">
+      <!-- <style>
+        .service-card {
+          height: 350px;
+          border-radius: 16px;
+          border: 2px solid #e4ecf7;
+          background: #fff;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          transition: 0.35s;
+          cursor: pointer;
+        }
 
-        <div class="card-content">
-          <h3>End Point Security Cloud</h3>
-          <p>Simple, comprehensive endpoint security for workstations, laptops and servers.</p>
+        .service-card:hover {
+          border-color: #6c63ff;
+          box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+        }
 
-          <div class="learn">
-            Know more
-            <span class="arrow">→</span>
-          </div>
-        </div>
-      </div>
-    </div>
+        .card-img {
+          width: 100%;
+          height: 180px;
+          object-fit: cover;
+          display: block;
+        }
 
-    <!-- Card 3 -->
-    <div class="col-12 col-md-6 col-lg-3">
-      <div class="service-card">
-        <img src="./cloud-computing.jpeg" class="card-img" alt="Cloud Computing">
+        .card-content {
+          padding: 5px 22px;
+          display: flex;
+          flex-direction: column;
+          flex: 1;
+          row-gap: 0.2rem;
+        }
 
-        <div class="card-content">
-          <h3>Cloud Computing Services</h3>
-          <p>In the present advanced scene in Cloud Computing Services, distributed computing.</p>
+        .service-card h3 {
+          font-size: 20px;
+          margin-bottom: 5px;
+        }
 
-          <div class="learn">
-            Know more
-            <span class="arrow">→</span>
-          </div>
-        </div>
-      </div>
-    </div>
+        .service-card p {
+          font-size: 14px;
+          color: #6b7a90;
+          line-height: 1.6;
+          margin: 0;
+        }
 
-    <!-- Card 4 -->
-    <div class="col-12 col-md-6 col-lg-3">
-      <div class="service-card">
-        <img src="./cloud-computing.jpeg" class="card-img" alt="Cloud Computing">
+        .learn {
+          margin-top: auto;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 10px;
+          font-weight: 600;
+          color: #6c63ff;
+          margin-top: 0;
+        }
 
-        <div class="card-content">
-          <h3>Firewall</h3>
-          <p>Simple, comprehensive endpoint security for workstations, laptops and servers.</p>
+        .arrow {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          background: #eae6ff;
+          transform: rotate(-45deg);
+          transition: 0.35s;
+        }
 
-          <div class="learn">
-            Know more
-            <span class="arrow">→</span>
-          </div>
-        </div>
-      </div>
-    </div>
+        .service-card:hover .arrow {
+          transform: translateX(6px) rotate(0deg);
+          background: #6c63ff;
+          color: #fff;
+        }
+      </style> -->
 
-  </div>
-</div>
-
-<style>
-  .service-card{
-height:350px;
-border-radius:16px;
-border:2px solid #e4ecf7;
-background:#fff;
-overflow:hidden;
-display:flex;
-flex-direction:column;
-transition:.35s;
-cursor:pointer;
-}
-
-.service-card:hover{
-border-color:#6c63ff;
-box-shadow:0 15px 40px rgba(0,0,0,0.08);
-}
-
-.card-img{
-width:100%;
-height:180px;
-object-fit:cover;
-display:block;
-}
-
-.card-content{
-padding:5px 22px;
-display:flex;
-flex-direction:column;
-flex:1;
-row-gap: 0.2rem;
-}
-
-.service-card h3{
-font-size:20px;
-margin-bottom:5px;
-}
-
-.service-card p{
-font-size:14px;
-color:#6b7a90;
-line-height:1.6;
-margin: 0;
-}
-
-.learn{
-margin-top:auto;
-display:flex;
-align-items:center;
-justify-content: space-between;
-gap:10px;
-font-weight:600;
-color:#6c63ff;
-margin-top: 0;
-}
-
-.arrow{
-display:inline-flex;
-align-items:center;
-justify-content:center;
-width:32px;
-height:32px;
-border-radius:50%;
-background:#eae6ff;
-transform:rotate(-45deg);
-transition:.35s;
-}
-
-.service-card:hover .arrow{
-transform:translateX(6px) rotate(0deg);
-background:#6c63ff;
-color:#fff;
-}
-</style>
       <!-- testimonials -->
     </div>
     <!-- Main content End -->
