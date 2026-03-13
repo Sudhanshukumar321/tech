@@ -1263,6 +1263,7 @@
         border-radius: 32px;
         color: #fff;
         overflow: hidden;
+        padding: 30px 0;
       }
       @media (max-width: 768px) {
         .TrustedPartners_card__92jLH {
@@ -1357,7 +1358,7 @@
       }
       @media (min-width: 768px) {
         .designed-card {
-          bottom: 210px;
+          bottom: 190px;
         }
       }
       .designed-card .first {
@@ -1436,9 +1437,21 @@
         }
       }
       .designed-card .inner-card-container .design-card-img {
+        bottom: -150px;
+        transform: translate(0, 0) rotate(5deg) skewX(0) skewY(0) scaleX(1)
+          scaleY(1);
+      }
+      @media (min-width: 768px) {
+        .designed-card .inner-card-container .design-card-img {
         bottom: -100px;
         transform: translate(0, 0) rotate(5deg) skewX(0) skewY(0) scaleX(1)
           scaleY(1);
+      }
+      }
+      @media (max-width: 768px) {
+        .designed-card .inner-card-container .two {
+        bottom: -120px;
+      }
       }
       @media (min-width: 768px) {
         .h-80 {
@@ -1683,7 +1696,7 @@
                 height="100"
                 decoding="async"
                 data-nimg="1"
-                class="design-card-img position-absolute start-0 end-0 w-100"
+                class="design-card-img position-absolute start-0 end-0 w-100 two"
                 style="color: transparent"
                 src="./ic-seq.jpg"
               />
@@ -1728,9 +1741,6 @@
         <div class="why-choose_container__73RUv">
           <div class="TrustedPartners_trustedPartnersSection__HjmcG">
             <div class="TrustedPartners_card__92jLH">
-              <h3 class="TrustedPartners_title__y9NT1 text-white">
-                Our Trusted Partners
-              </h3>
               <div class="TrustedPartners_marqueeContainer__I_uQ1">
                 <div class="TrustedPartners_marqueeContent__n_Jf1">
                   <div class="TrustedPartners_logoItem__PhF_o">
